@@ -1,8 +1,8 @@
-import { View, Image, StyleSheet, Text, ScrollView, KeyboardAvoidingView, Platform } from 'react-native';
 import { Link } from 'expo-router';
+import { Image, KeyboardAvoidingView, Platform, ScrollView, StyleSheet, Text, View } from 'react-native';
 
-import { Input } from '@/components/input';
 import { Button } from '@/components/button';
+import { Input } from '@/components/input';
 
 export default function App() {
     return (
