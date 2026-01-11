@@ -7,17 +7,17 @@ import { Input } from '@/components/input';
 export default function App() {
     return (
         <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
-        <ScrollView contentContainerStyle={{ flexGrow: 1 }} keyboardShouldPersistTaps='handled'>
+        <ScrollView contentContainerStyle={{ flexGrow: 1 }} keyboardShouldPersistTaps='handled' showsVerticalScrollIndicator={false}>
             <View style={styles.container}>
                 <Image
                     source={require("@/assets/img01.png")}
                     style={styles.ilustration}
                 />
-                <Text style={styles.title}>Login</Text>
+                <Text style={styles.title}>Sign In</Text>
                 <View style={styles.form}>
                     <Input placeholder="email or number phone" />
                     <Input placeholder="password" secureTextEntry />
-                    <Button label="Login" />
+                    <Button label="Sign In" />
                 </View>
                 <Text style={styles.footertext}>Don't you have an account? Create account {' '}
                     <Link href='/signup' style={styles.footerlink}>
